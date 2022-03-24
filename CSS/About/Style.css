@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 20px;
+    padding: 5px;
+    margin-bottom: -50px;
+    color: darkblue;
+}
+
+h1 {
+    font-family: ohno-blazeface, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+h2 {
+    font-family: ohno-blazeface, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-right: 45px;
+    word-spacing: 20px;
+    
+}
+
+.about {
+    background-color: rgb(179, 171, 201);
+    padding: 30px;
+    margin: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
