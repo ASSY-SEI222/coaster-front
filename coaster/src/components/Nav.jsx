@@ -7,7 +7,7 @@ function Nav() {
     <header>
       <nav>
         <Link to='/' >Home</Link>
-        <Link to='' >Coasters</Link>
+        <Link to='/coasters' >Coasters</Link>
         <Link to='/about' >About</Link>
       </nav>
     </header>
