@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 20px;
+    padding: 5px;
+    margin-bottom: -50px;
+    color: darkblue;
+}
+
+h1 {
+    font-family: ohno-blazeface, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-right: 45px;
+    word-spacing: 20px;
+}
+
+.park-cards {
+    background-color: rgb(201, 174, 171);
+    padding: 300px;
+    margin: 50px;
+}
