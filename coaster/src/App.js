@@ -6,7 +6,8 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About'
 import Coasters from './pages/Coasters'
-import CoasterDetials from './pages/CoasterDetials';
+import CoasterDetails from './pages/CoasterDetails';
+import ParkDetails from './pages/ParkDetails';
 
 
 
@@ -21,7 +22,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/coasters' element={<Coasters />} />
           <Route path='/about' element={<About />} />
-          <Route path='/coasters/:coasterId' element={<CoasterDetials />}/>
+          <Route path='/coasters/details' element={<CoasterDetails />}/>
+          <Route path='/parks/details' element={<ParkDetails />} /> 
         </Routes>
       </main>
     </div>

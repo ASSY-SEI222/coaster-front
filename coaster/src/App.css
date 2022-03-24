@@ -21,6 +21,12 @@ header nav a {
   text-align: center;
 }
 
+
 .Coaster-details {
+  text-align: center;
+}
+
+.ParkDetails,
+.CoasterDetails {
   text-align: center;
 }
