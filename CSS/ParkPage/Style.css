@@ -1,0 +1,51 @@
+.coaster-cards {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .left,
+  .right {
+    text-align: center;
+    flex: 1;
+  }
+  
+  h1 {
+    text-decoration: underline;
+  }
+  
+  .left {
+    border-right: 1px solid #333;
+  }
+  
+  .right {
+    border-left: 1px solid #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .park-item {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 300px;
+    margin: 0.5em auto;
+    border-radius: 6px;
+  }
+  
+  h3, h5 {
+   color: white;
+   background-color: rgb(0, 0, 0, 40%);
+   padding: 4px;
+  }
+
+  #GreatAdventure {
+    background: url("https://www.acadexthailand.com/wp-content/uploads/2021/06/untitled-5-6.jpg") center;
+    background-size: cover;
+  }
