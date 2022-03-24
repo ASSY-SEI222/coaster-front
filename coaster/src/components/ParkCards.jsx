@@ -1,8 +1,11 @@
 import React from 'react'
 
-function ParkCards() {
+function ParkCards(props) {
   return (
-    <div>ParkCards</div>
+    <li className="park-item" id={props.name}>
+        <h3>Name: {props.name}</h3>
+        <h5>Location: {props.capitol}</h5>
+      </li>
   )
 }
 
