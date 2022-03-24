@@ -9,15 +9,12 @@
   <title>ASSY Coasters</title>
 </head>
 <body>
-  <header><h1>The Ultimate Rollercoaster Database</h1>
-          <h1></h1>
-          <div class="nav">
-            <a class="active" href="#home">Home</a>
-            <a href="#coasters">Coasters!</a>
-            <a href="#about">About</a>
-          </div>
-    </header>
-    <div class="park-cards"></div>
+  <div className="park-card">
+    <li className="park-item" id={props.name}>
+        <h3>Name: {props.name}</h3>
+        <h5>Location: {props.location}</h5>
+    </li>
+  </div>
 </body>
 </html>
 
