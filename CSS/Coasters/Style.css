@@ -1,35 +1,51 @@
-body {
-    text-align: center;
-    background-color: white;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    line-height: 20px;
-    padding: 5px;
-    margin-bottom: -50px;
-    color: darkblue;
-}
-
-h1 {
-    font-family: ohno-blazeface, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 25px;
-    margin-left: 50px;
-}
-
-.nav {
-    margin-top: 20px;
-    margin-right: 45px;
-    word-spacing: 20px;
-}
-
 .coaster-cards {
-    background-color: rgb(179, 171, 201);;
-    padding: 300px;
-    margin: 50px;
-}
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .left,
+  .right {
+    text-align: center;
+    flex: 1;
+  }
+  
+  h1 {
+    text-decoration: underline;
+  }
+  
+  .left {
+    border-right: 1px solid #333;
+  }
+  
+  .right {
+    border-left: 1px solid #333;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .coaster-item {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 300px;
+    margin: 0.5em auto;
+    border-radius: 6px;
+  }
+  
+  h3, h5 {
+   color: white;
+   background-color: rgb(0, 0, 0, 40%);
+   padding: 4px;
+  }
+
+  #Kingdaka {
+    background: url("https://www.tripsavvy.com/thmb/3GVbegkArMdBEtf_iqAUsqnqPVk=/1500x1125/filters:fill(auto,1)/4722410085_859ed85509_o-593e572a5f9b58d58ac35a11.jpg") center;
+    background-size: cover;
+  }
