@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav';
 // import CoasterCard from './components/CoasterCard';
 // import ParkCards from './components/ParkCards';
-import Home from './pages/Home';
+import Parks from './pages/Parks';
 import About from './pages/About'
 import Coasters from './pages/Coasters'
 import CoasterDetails from './pages/CoasterDetails';
@@ -19,7 +19,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Parks />} />
           <Route path='/coasters' element={<Coasters />} />
           <Route path='/about' element={<About />} />
           <Route path='/coasters/details' element={<CoasterDetails />}/>
