@@ -5,7 +5,9 @@ import Nav from './components/Nav';
 // import ParkCards from './components/ParkCards';
 import Home from './pages/Home';
 import About from './pages/About'
-import CoasterDetails from './pages/CoasterDetails'
+import Coasters from './pages/Coasters'
+import CoasterDetials from './pages/CoasterDetials';
+
 
 
 function App() {
@@ -17,9 +19,9 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/coasters' element={<CoasterDetails/>} />
-          <Route path="/about" element={<About/ >} />
-          <Route />
+          <Route path='/coasters' element={<Coasters />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/coasters/:coasterId' element={<CoasterDetials />}/>
         </Routes>
       </main>
     </div>
