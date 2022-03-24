@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 // import ParkCards from './components/ParkCards';
 import Home from './pages/Home';
 import About from './pages/About'
+import CoasterDetails from './pages/CoasterDetails'
 
 
 function App() {
@@ -14,11 +15,10 @@ function App() {
        <Nav />
       </header>
       <main>
-        <h1>Hello</h1>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/coasters' element={<CoasterDetails/>} />
           <Route path="/about" element={<About/ >} />
-          <Route />
           <Route />
         </Routes>
       </main>
