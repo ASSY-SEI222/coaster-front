@@ -2,37 +2,38 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ParkCards from '../components/ParkCards'
 import image from '../images/matt-bowden-GZc4fnQsaWQ-unsplash.jpg'
-// import axios from 'axios'
+import { useState, useEffect } from "react"
+import axios from 'axios'
 // import CoasterDetails from './CoasterDetails'
 // import ParkDetails from '../components/ParkDetails'
 // import { Link } from 'react-router-dom'
 
-function Home() {
+function Home(props) {
+  const [ parks, setParks ] = useState ([])
+
+  const getParks = async () => {
+    const res = await axios("http://127.0.0.1:3001/api/allParks")
+    // const data = res.json()
+    setParks(res.data.parks)
+    
+}
+
+useEffect(()=> {
+    getParks()
+}, [])
   return (
     <div className='home'>
       <h1>Welcome to the homepage</h1>
-
-      {/* < ParkCards /> */}
-        {/* // {parkCards.map((park)=>(
-        //   <ParkCards
-        //     name={}
-        //     image={}
-        //     discribtion={}
-        // ))}
-       */}
-
-    {/* Just a placeholder to show some demo content */}
-  
-      <Link to='/parks/details'> 
-        <img src={image} alt ='' style={{width: '25vw', marginTop: '50px'}}/>
-        <h1>ParkCard 1</h1>
-        <p style={{width: '25vw', display:'inline-block', textAlign:'center'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget purus pulvinar, pharetra ipsum eget, viverra elit. Integer volutpat bibendum dui ac interdum. In consectetur odio eget volutpat tristique. </p>
-      </Link>
-      <div>
-        <img src={image} alt ='' style={{width: '25vw', marginTop: '50px'}}/>
-        <h1>ParkCard 2</h1>
-        <p style={{width: '25vw', display:'inline-block', textAlign:'center'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget purus pulvinar, pharetra ipsum eget, viverra elit. Integer volutpat bibendum dui ac interdum. In consectetur odio eget volutpat tristique. </p>
-      </div>
+        {parks.map((park) => {
+          return (
+            <Link to={`/parks/details/${park._id}`}> 
+              <div key={park._id}>
+                  <h1>{park.parkName}</h1>
+                  <h5>Location:{park.location}</h5>
+                  <img src={park.picture} alt={''}/>
+              </div>
+            </Link>
+        )})}
     </div>
   )
 }

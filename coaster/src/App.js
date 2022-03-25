@@ -23,8 +23,9 @@ function App() {
           <Route path='/coasters' element={<Coasters />} />
           <Route path='/about' element={<About />} />
           <Route path='/coasters/details' element={<CoasterDetails />}/>
-          <Route path='/parks/details' element={<ParkDetails />} /> 
+          <Route path='/parks/details/:parkId' element={<ParkDetails />} /> 
         </Routes>
+
       </main>
     </div>
   );
